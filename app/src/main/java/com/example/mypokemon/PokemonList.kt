@@ -24,12 +24,14 @@ class PokemonList : Fragment() {
 
     init {
         val retrofit = RetrofitClient.instance
-        iPokemonList = retrofit.create<IPokemonList>(IPokemonList::class.java)
+        iPokemonList = retrofit.create(IPokemonList::class.java)
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         val itemView = inflater.inflate(R.layout.fragment_pokemon_list, container, false)
 //        itemView.findViewById<RecyclerView>(R.id.pokemon_recyclerview)
@@ -53,11 +55,4 @@ class PokemonList : Fragment() {
             }
         )
     }
-
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//        pokemon_recyclerview = view.findViewById(R.id.pokemon_recyclerview)
-//    }
-
-
 }

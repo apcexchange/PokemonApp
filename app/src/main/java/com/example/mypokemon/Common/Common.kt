@@ -62,25 +62,6 @@ object Common {
         }
     }
 
-//    public static Pokemon findPokemonByNum(String num) {
-//        for(Pokemon pokemon : commonPokemonList)
-//        {
-//            if(pokemon.getNum().equals(num))
-//                return pokemon;
-//        }
-//        return null;
-//    }
-//
-//    public static List<Pokemon> findPokemonsByType(String type) {
-//        List<Pokemon> result = new ArrayList<>()
-//        for(Pokemon pokemon : commonPokemonList)
-//        {
-//            if(pokemon.getType().contains(type))
-//                result.add(pokemon)
-//        }
-//        return result
-//    }
-//    }
 
     val KEY_NUM_EVLUTION = "evolution"
     var pokemonList: List<Pokemon> = ArrayList()
